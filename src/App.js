@@ -15,6 +15,10 @@ function App() {
 
 	const addItem = item => {
 		// add the given item to the cart
+		setCart({
+			...cart,
+			item
+		})
 	};
 
 	return ( // why are there 2 {} on line 21?
